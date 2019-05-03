@@ -1,0 +1,51 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 378px;
+  margin: 0 auto;
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+}
+
+.qrcode{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: #00a600;
+  opacity: 0.8;
+  top: 0;
+  left: 89px;
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.canvas{
+  :global{
+    canvas{
+      margin: auto;
+    }
+  }
+}
