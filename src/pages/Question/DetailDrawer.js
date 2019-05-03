@@ -38,6 +38,7 @@ class DetailDrawer extends PureComponent {
             {values.options.map(o => (
               <Radio
                 key={o.key}
+                value={o.description}
                 style={{
                   display: 'block',
                   height: '30px',
@@ -70,7 +71,6 @@ class DetailDrawer extends PureComponent {
   render() {
     const {visible, handleDetailDrawerVisible, values} = this.props;
 
-    console.log(values);
     return (
       <Drawer
         title="题目预览"
